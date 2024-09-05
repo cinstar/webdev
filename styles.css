@@ -1,0 +1,340 @@
+html {
+    font-family: Monospace, sans-serif;
+    font-size: 10px;
+    background: #151D33;
+    color: white;
+}
+
+h1, h3, p {
+    text-align: center;
+}
+
+h1:not(#hero-title) {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a:not(#spinitron) {
+    text-decoration: none;
+    color: white;
+}
+
+#spinitron {
+    color: white;
+}
+
+#hero, #about, #features, #inquiries {
+    padding-top: 70px;
+}
+
+/* nav bar */
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #151D33;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    font-size: 1.5rem;
+}
+
+#header-img {
+    width: 20px;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+li {
+    list-style: none;
+    display: list-item;
+    font-size: 1.5rem;
+}
+
+.short-text {
+    display: none;
+}
+
+/* hero */
+
+#hero {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#banner {
+    filter: invert(1);
+    filter: brightness(30);
+    width: 100%;
+}
+
+#hero-title {
+    font-size: 4rem;
+}
+
+#form-desc {
+    font-style: italic;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#email, #submit {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+}
+
+#email {
+    width: 70%;
+    padding: 2.5px 0;
+}
+
+#submit {
+    color: white;
+    border: 2px solid white;
+    background-color: #151D33;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#submit:hover {
+    color: #151D33;
+    background-color: white;
+}
+
+/* about */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#profile-pic {
+    width: 80%;
+    border-radius: 30px;
+}
+
+#caption {
+    font-style: italic;
+    font-family: 'Courier New';
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+#description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#weekly-song {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 40px 0;
+}
+
+#video {
+    width: 80%;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.movie-title {
+    font-style: normal;
+}
+
+/* features */
+
+#artist-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.artist-card {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    width: calc(100% / 3);
+    margin: 10px;
+    min-width: 200px;
+}
+
+.artist-name {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 1.75rem;
+}
+
+.artist-pic {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px;
+}
+
+#niki-pic {
+    object-position: top;
+}
+
+#hashir-pic, #nana-pic {
+    object-position: 30% 30%;
+}
+
+.artist-bio {
+    padding: 0 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+.artist-card > h3 {
+    margin-top: 30px;
+    font-size: 1.25rem;
+}
+
+.song-track {
+    width: 80%;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+    min-width: 200px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px 0;
+}
+
+footer > nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer > nav > ul {
+    margin-left: -40px;
+}
+
+/* responsive design */
+@media only screen and (max-width: 1200px) {
+    #artist-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .artist-card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+    .artist-name-and-bio {
+        margin: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .artist-pic {
+        width: calc(100% / 3);
+        margin-left: 20px;
+    }
+    .artist-bio {
+        text-align: left;
+        width: 2 * calc(100% / 3);
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .short-text {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 10px;
+        border-radius: 100px;
+    }
+    .full-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+    #hero-image {
+        width: 150px;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #intro {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-link {
+        font-size: 1rem;
+    }
+}
